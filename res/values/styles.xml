@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/black_steel</item>
+        <item name="colorPrimaryDark">@color/black_steel</item>
+        <item name="colorAccent">@color/gold_leaf</item>
+        <item name="android:colorBackground">@color/paper</item>
+        <item name="android:colorForeground">@color/black_steel</item>
+        <item name="android:textColorPrimary">@color/gold_leaf</item>
+        <item name="android:textColorPrimaryInverse">@color/silver</item>
+        <item name="android:textColorSecondary">@color/black_steel</item>
+        <item name="android:windowBackground">@color/paper</item>
+        <item name="android:textColorSecondaryInverse">@color/silver</item>
+        <item name="android:textColor">@color/black_steel</item>
+        <item name="android:editTextColor">@color/black_steel</item>
+        <item name="android:homeAsUpIndicator">@drawable/previous_icon</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/MyTitleTextStyle</item>
+    </style>
+
+    <style name="MyTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/gold_leaf</item>
+    </style>
+
+</resources>

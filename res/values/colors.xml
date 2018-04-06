@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- default colors -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- calendar colors -->
+    <color name="today">#4b82ff</color>
+    <color name="greyed_out">#c7c7c7</color>
+
+    <!-- custom colors -->
+    <color name="paper">#efefefef</color>
+    <color name="black_steel">#080706</color>
+    <color name="gold_leaf">#d1b280</color>
+    <color name="silver">#594d46</color>
+</resources>

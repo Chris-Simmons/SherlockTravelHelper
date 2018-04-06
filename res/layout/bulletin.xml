@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="e.chris.sherlocktravelhelper.bulletin">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bulletinInstruct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/immigrantOriginSelect"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/bulletinSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/bulletin_array"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_steel">
+
+                <TextView
+                    android:id="@+id/bulletinFamTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/familyBulletinHeading"
+                    android:textAlignment="center"
+                    android:textColor="@color/gold_leaf" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal"
+                android:background="@color/black_steel">
+
+                <TextView
+                    android:id="@+id/bulletinHeaderPref"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight=".7"
+                    android:text="@string/preference"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/silver" />
+
+                <TextView
+                    android:id="@+id/bulletinHeaderDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight=".3"
+                    android:text="@string/processing"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/silver" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/f1Pref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/f1"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/f1Date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/f2aPref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/f2a"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/f2aDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/f2bPref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/f2b"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/f2bDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/f3Pref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/f3"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/f3Date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/f4Pref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/f4"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/f4Date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_steel">
+
+                <TextView
+                    android:id="@+id/bulletinEmployTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/employmentBulletinHeading"
+                    android:textAlignment="center"
+                    android:textColor="@color/gold_leaf" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/firstPref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/first"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/firstDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/secondPref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/second"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/secondDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/thirdPref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/third"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/thirdDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/owPref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/ow"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/owDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/fourthPref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/fourth"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/fourthDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/relPref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/religious"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/relDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/nrcPref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/nrc"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/nrcDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/rcPref"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight=".6"
+                    android:text="@string/rc"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:id="@+id/rcDate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight=".4"
+                    android:text=""
+                    android:textAlignment="textEnd" />
+            </TableRow>
+        </GridLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
